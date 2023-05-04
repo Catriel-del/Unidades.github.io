@@ -18,7 +18,7 @@ const calculo = (ctas_max, ctas_min, eu_max, eu_min, imax, imin, inst, opt) => {
     ctas_inst = inst;
     return io, eu_inst, ctas_inst;
   } else if (opt == 2) {
-    console.log(ctas_max, ctas_min, eu_max, eu_min, imax, imin, inst, opt);
+    io=inst;
     ctas_inst =
       ((ctas_max - ctas_min) * (inst - imin)) / (imax - imin) + ctas_min;
     eu_inst =
